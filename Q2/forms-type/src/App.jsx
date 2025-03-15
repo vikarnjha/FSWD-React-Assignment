@@ -1,7 +1,7 @@
 import {} from "react";
-import "./App.css";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
