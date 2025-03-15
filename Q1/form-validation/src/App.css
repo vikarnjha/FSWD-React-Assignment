@@ -1,0 +1,47 @@
+/* Centering the form */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Labels */
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields */
+  .form-control {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Error Alert */
+  .alert-danger {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
