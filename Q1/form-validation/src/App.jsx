@@ -3,16 +3,13 @@ import { Form, Button, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-
 const App = () => {
-  // const [formData, setFormData] = useState({ email: "", password: "" });
   const [validated, setValidated] = useState(false);
   const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-
     if (form.checkValidity() === false) {
       setError("Please fill all fields correctly.");
     } else {
@@ -21,7 +18,7 @@ const App = () => {
     }
     setValidated(true);
   };
-
+  
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       {error && <Alert variant="danger">{error}</Alert>}
@@ -32,7 +29,6 @@ const App = () => {
           Please provide a valid email.
         </Form.Control.Feedback>
       </Form.Group>
-
       <Form.Group controlId="formPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control
@@ -45,10 +41,8 @@ const App = () => {
           Password must be at least 6 characters long.
         </Form.Control.Feedback>
       </Form.Group>
-
       <Button type="submit">Submit</Button>
     </Form>
   );
 };
-
 export default App;
