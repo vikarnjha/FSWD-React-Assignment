@@ -1,14 +1,28 @@
-import {} from 'react'
-import './App.css'
+import {} from "react";
+import "./App.css";
+import { Form, Button, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
-
   return (
     <>
-     <h1>Hello Vikarn</h1>
+      <Form className="inline-form">
+        <Form.Control type="text" placeholder="Search" />
+        <Button type="submit">Search</Button>
+      </Form>
+
+      <Form>
+        <Form.Group as={Row} controlId="formHorizontalEmail">
+          <Form.Label column sm={2}>
+            Email
+          </Form.Label>
+          <Col sm={10}>
+            <Form.Control type="email" placeholder="Email" />
+          </Col>
+        </Form.Group>
+      </Form>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

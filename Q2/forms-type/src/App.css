@@ -1,0 +1,53 @@
+/* Centering the Horizontal Form */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Inline Form */
+form.inline-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inline-form input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Form Labels */
+label {
+  font-weight: 600;
+}
+
+/* Input Fields */
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
